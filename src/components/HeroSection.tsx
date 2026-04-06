@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const MONOGRAM = "R&S";
-const HASHTAG = "#RuSaki";
-const GROOM = "Roopa";
-const BRIDE = "Saketh";
+const MONOGRAM = "B&S";
+const HASHTAG = "#BhargavSriVaishnavi";
+const GROOM = "Bhargav Raj";
+const BRIDE = "Sri Vaishnavi";
 const LIVE_STREAM_URL = "#";
 
 interface HeroProps {
