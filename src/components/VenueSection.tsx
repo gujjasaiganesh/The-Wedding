@@ -40,7 +40,7 @@ const VenueSection = ({ lang }: VenueSectionProps) => {
         >
           <div className="animate-pulse-soft">
             <img
-              src={`${QR_API}${encodeURIComponent(MAPS_LINK)}`}
+              src={venueQr}
               alt="QR code for directions"
               className="w-40 h-40 rounded-lg shadow-md"
               loading="lazy"
