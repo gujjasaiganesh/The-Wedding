@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const VENUE_NAME = "Tropical Side";
-const VENUE_ADDRESS = "81,82/A, Plot No. 80, Behind Indian Oil Petroleum,\nKuntloor, Hyderabad, R.R. Dist.";
+const VENUE_NAME = "SYR Convention Hall";
+const VENUE_ADDRESS = "Hyderabad, Telangana";
 const MAPS_LINK = "https://maps.google.com";
 const QR_API = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
 
