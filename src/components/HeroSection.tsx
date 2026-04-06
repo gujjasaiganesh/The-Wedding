@@ -59,7 +59,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
         <h1
           className={`font-calligraphy text-5xl md:text-7xl font-light text-foreground transition-all duration-700 delay-500 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          {GROOM}
+          {lang === "en" ? GROOM : "భార్గవ్ రాజ్"}
         </h1>
         <p
           className={`font-calligraphy text-3xl md:text-4xl italic text-primary transition-all duration-700 delay-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
@@ -69,7 +69,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
         <h1
           className={`font-calligraphy text-5xl md:text-7xl font-light text-foreground transition-all duration-700 delay-[900ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          {BRIDE}
+          {lang === "en" ? BRIDE : "శ్రీ వైష్ణవి"}
         </h1>
       </div>
 
