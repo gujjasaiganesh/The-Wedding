@@ -1,5 +1,6 @@
 import coupleImg from "@/assets/couple-illustration.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { invitation, t } from "@/config/invitation";
 
 interface CoupleSectionProps {
   lang: "en" | "te";
@@ -7,6 +8,7 @@ interface CoupleSectionProps {
 
 const CoupleSection = ({ lang }: CoupleSectionProps) => {
   const { ref, isVisible } = useScrollReveal(0.1);
+  const { couple, families, event } = invitation;
 
   return (
     <section ref={ref} className="relative py-20 px-4">
@@ -38,26 +40,26 @@ const CoupleSection = ({ lang }: CoupleSectionProps) => {
           </p>
 
           <p
-            className={`font-sans text-sm leading-relaxed text-muted-foreground transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`font-sfpro text-sm leading-relaxed text-muted-foreground transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             {lang === "en"
-              ? "We solicit your gracious presence with family and friends on the auspicious occasion of our son's marriage."
+              ? "We solicit your gracious presence with family and friends on the auspicious occasion of our marriage."
               : "మా కుమారుడి వివాహ శుభ సందర్భంలో మీ సకుటుంబ సపరివార సాన్నిధ్యాన్ని ప్రార్థిస్తున్నాము."}
-          </p>
-
-          {/* Parents */}
-          <p
-            className={`font-sans text-xs text-muted-foreground transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-          >
-            (Chi. Akunoor Seetha Rama Rao - Smt. Sandhya Rani&apos;s)
           </p>
 
           {/* Groom */}
           <h2
             className={`font-calligraphy text-3xl md:text-4xl text-foreground transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Chi. Bhargav Raj
+            {couple.groom.formalEn}
           </h2>
+
+          {/* Parents */}
+          <p
+            className={`font-sfpro text-xs text-muted-foreground transition-all duration-700 delay-550 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          >
+            {families.groomParentsEn}
+          </p>
 
           <p
             className={`font-sans text-xs tracking-[0.2em] uppercase text-primary transition-all duration-700 delay-600 ${isVisible ? "opacity-100" : "opacity-0"}`}
@@ -69,13 +71,13 @@ const CoupleSection = ({ lang }: CoupleSectionProps) => {
           <h2
             className={`font-calligraphy text-3xl md:text-4xl text-foreground transition-all duration-700 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Chi.La.Sow. Sri Vaishnavi
+            {couple.bride.formalEn}
           </h2>
 
           <p
-            className={`font-sans text-xs text-muted-foreground transition-all duration-700 delay-[800ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`font-sfpro text-xs text-muted-foreground transition-all duration-700 delay-[800ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            (D/o Kandadi Balakrishna Reddy - Bhagya Lakshmi)
+            {families.brideParentsEn}
           </p>
 
           {/* Decorative star */}
@@ -88,13 +90,13 @@ const CoupleSection = ({ lang }: CoupleSectionProps) => {
             className={`inline-block border border-border rounded-xl p-5 shadow-sm bg-card/60 backdrop-blur-sm transition-all duration-700 delay-[1000ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
           >
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-primary mb-2">
-              {lang === "en" ? "Sumuhurtham" : "సుముహూర్తం"}
+              {t(event.sumuhurthamLabel, lang)}
             </p>
             <p className="font-serif text-sm text-foreground">
-              On Wednesday, 01st April 2026 at 08:39 PM
+              {event.sumuhurthamEn}
             </p>
             <p className="font-sans text-xs text-muted-foreground mt-1">
-              Harsha Nakshatram, Tula Lagnam
+              {event.sumuhurthamNoteEn}
             </p>
           </div>
 

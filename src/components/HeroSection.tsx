@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { invitation, t } from "@/config/invitation";
 
-const MONOGRAM = "B&S";
-const HASHTAG = "#BhargavSriVaishnavi";
-const GROOM = "Bhargav Raj";
-const BRIDE = "Sri Vaishnavi";
-const LIVE_STREAM_URL = "#";
+const { couple, event, links } = invitation;
 
 interface HeroProps {
   lang: "en" | "te";
@@ -43,7 +40,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
         className={`transition-all duration-1000 ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
       >
         <span className="font-calligraphy text-7xl md:text-8xl text-foreground select-none">
-          {MONOGRAM}
+          {couple.monogram}
         </span>
       </div>
 
@@ -51,7 +48,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
       <p
         className={`mt-6 text-sm font-sans tracking-[0.3em] uppercase text-primary transition-all duration-700 delay-300 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
       >
-        {HASHTAG}
+        {couple.hashtag}
       </p>
 
       {/* Couple Names */}
@@ -59,7 +56,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
         <h1
           className={`font-calligraphy text-5xl md:text-7xl font-light text-foreground transition-all duration-700 delay-500 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          {lang === "en" ? GROOM : "భార్గవ్ రాజ్"}
+          {t(couple.groom, lang)}
         </h1>
         <p
           className={`font-calligraphy text-3xl md:text-4xl italic text-primary transition-all duration-700 delay-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
@@ -69,7 +66,7 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
         <h1
           className={`font-calligraphy text-5xl md:text-7xl font-light text-foreground transition-all duration-700 delay-[900ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          {lang === "en" ? BRIDE : "శ్రీ వైష్ణవి"}
+          {t(couple.bride, lang)}
         </h1>
       </div>
 
@@ -77,14 +74,14 @@ const HeroSection = ({ lang, onLangChange }: HeroProps) => {
       <p
         className={`mt-6 font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground transition-all duration-700 delay-[1100ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
       >
-        {lang === "en" ? "Wedding Invitation" : "వివాహ ఆహ్వానం"}
+        {t(event.subtitle, lang)}
       </p>
 
       {/* CTA */}
       <div
         className={`mt-8 transition-all duration-700 delay-[1300ms] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <a href={LIVE_STREAM_URL} target="_blank" rel="noopener noreferrer">
+        <a href={links.liveStreamUrl} target="_blank" rel="noopener noreferrer">
           <Button variant="wedding" size="lg" className="gap-2">
             <span>📹</span> {lang === "en" ? "Watch Live Stream" : "ప్రత్యక్ష ప్రసారం"}
           </Button>

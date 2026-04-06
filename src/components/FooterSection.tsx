@@ -31,7 +31,7 @@ const FooterSection = ({ lang }: FooterSectionProps) => {
       <p
         className={`font-sans text-xs tracking-[0.3em] uppercase text-muted-foreground transition-all duration-700 delay-500 ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
-        April 1st, 2026
+        April 29th, 2026
       </p>
 
       <div className={`transition-all duration-700 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
