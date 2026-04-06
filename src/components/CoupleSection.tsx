@@ -56,7 +56,7 @@ const CoupleSection = ({ lang }: CoupleSectionProps) => {
           <h2
             className={`font-calligraphy text-3xl md:text-4xl text-foreground transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Chi. Saketh Akunoor
+            Chi. Bhargav Raj
           </h2>
 
           <p
@@ -69,7 +69,7 @@ const CoupleSection = ({ lang }: CoupleSectionProps) => {
           <h2
             className={`font-calligraphy text-3xl md:text-4xl text-foreground transition-all duration-700 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Chi.La.Sow. Roopavani Kandadi
+            Chi.La.Sow. Sri Vaishnavi
           </h2>
 
           <p
