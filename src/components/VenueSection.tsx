@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import venueQr from "@/assets/venue-qr.png";
 
 const VENUE_NAME = "SYR Convention Hall";
 const VENUE_ADDRESS = "Hyderabad, Telangana";
 const MAPS_LINK = "https://maps.google.com";
-const QR_API = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
 
 interface VenueSectionProps {
   lang: "en" | "te";
@@ -40,7 +40,7 @@ const VenueSection = ({ lang }: VenueSectionProps) => {
         >
           <div className="animate-pulse-soft">
             <img
-              src={`${QR_API}${encodeURIComponent(MAPS_LINK)}`}
+              src={venueQr}
               alt="QR code for directions"
               className="w-40 h-40 rounded-lg shadow-md"
               loading="lazy"
