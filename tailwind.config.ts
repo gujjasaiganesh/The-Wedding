@@ -48,16 +48,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
-          dark: "hsl(var(--gold-dark))",
-        },
-        cream: {
-          DEFAULT: "hsl(var(--cream))",
-          dark: "hsl(var(--cream-dark))",
-        },
-        "warm-brown": "hsl(var(--warm-brown))",
+        gold: "hsl(var(--gold))",
+        "rose-gold": "hsl(var(--rose-gold))",
+        "soft-pink": "hsl(var(--soft-pink))",
+        ivory: "hsl(var(--ivory))",
+        ink: "hsl(var(--ink))",
+        "archival-paper": "hsl(var(--archival-paper))",
+        "dusty-blue": "hsl(var(--dusty-blue))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -70,9 +67,10 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
-        calligraphy: ['Cormorant Garamond', 'Georgia', 'serif'],
-        sans: ['SF Pro Display', 'SF Pro Text', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        script: ['var(--font-script)', 'cursive'],
+        serif: ['var(--font-serif)', 'serif'],
+        calligraphy: ['var(--font-calligraphy)', 'serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
