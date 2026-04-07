@@ -2,8 +2,8 @@ export type InvitationLang = "en" | "te";
 
 export const invitation = {
   couple: {
-    monogram: "B&S",
-    hashtag: "#BhargavSriVaishnavi",
+    monogram: "B&V",
+    hashtag: "#BhargaVaishU",
     groom: {
       en: "Bhargav Raj",
       te: "భార్గవ్ రాజ్",
@@ -16,8 +16,8 @@ export const invitation = {
     },
   },
   families: {
-    groomParentsEn: "(Chi. Akunoor Seetha Rama Rao - Smt. Sandhya Rani's)",
-    brideParentsEn: "(D/o Kandadi Balakrishna Reddy - Bhagya Lakshmi)",
+    groomParentsEn: "(Chi. M.Ravi- SMT .M.Anuradha )",
+    brideParentsEn: "(D/o Sri M.V.Ramana Rao - Late SMT. M.Radhika)",
   },
   event: {
     subtitle: {
@@ -28,8 +28,8 @@ export const invitation = {
       en: "Sumuhurtham",
       te: "సుముహూర్తం",
     },
-    sumuhurthamEn: "On Wednesday, 29th April 2026 at 08:39 PM",
-    sumuhurthamNoteEn: "Harsha Nakshatram, Tula Lagnam",
+    sumuhurthamEn: "On Wednesday, 29th April 2026 at 10:32 AM",
+    sumuhurthamNoteEn: "Mithuna Lagnam",
   },
   links: {
     liveStreamUrl: "#",

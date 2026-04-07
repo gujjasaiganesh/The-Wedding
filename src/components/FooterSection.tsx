@@ -36,7 +36,7 @@ const FooterSection = ({ lang }: FooterSectionProps) => {
 
       <div className={`transition-all duration-700 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
         <span className="inline-block border border-border rounded-full px-5 py-2 font-sans text-xs tracking-widest text-primary">
-          #BhargavSriVaishnavi
+          #BhargaVaishu
         </span>
       </div>
 

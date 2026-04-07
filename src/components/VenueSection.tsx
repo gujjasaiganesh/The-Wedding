@@ -3,7 +3,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import venueQr from "@/assets/venue-qr.png";
 
 const VENUE_NAME = "SYR Convention Hall";
-const VENUE_ADDRESS = "Hyderabad, Telangana";
+const VENUE_ADDRESS = "RCI Road, Karmanghat, R.R Dist.";
 const MAPS_LINK = "https://maps.app.goo.gl/HyP3h9aMD1Nw3LYn7?g_st=ic";
 
 interface VenueSectionProps {
