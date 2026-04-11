@@ -46,26 +46,17 @@ const MusicToggle = () => {
   return (
     <button
       onClick={toggleMusic}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-r from-ink/90 to-ink/80 backdrop-blur-md border-2 border-gold/30 shadow-xl flex items-center justify-center transition-all duration-500 hover:scale-110 hover:border-gold/60 hover:shadow-2xl group"
+      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-lg bg-white/90 backdrop-blur-sm border border-gold/40 shadow-md flex items-center justify-center transition-all duration-300 hover:scale-105 hover:border-gold/70 hover:shadow-lg group"
       aria-label="Toggle Music"
     >
       {isPlaying ? (
         <div className="relative">
-          <div className="flex items-center gap-1">
-            <div className="w-1 h-4 bg-gold rounded-full animate-pulse"></div>
-            <div className="w-1 h-6 bg-gold rounded-full animate-pulse delay-75"></div>
-            <div className="w-1 h-3 bg-gold rounded-full animate-pulse delay-150"></div>
-          </div>
-          <span className="absolute -top-1 -right-1 w-3 h-3 bg-gold rounded-full animate-ping"></span>
+          <Music2 className="w-6 h-6 text-gold animate-spin" />
+          <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-gold/60 rounded-full"></span>
         </div>
       ) : (
-        <div className="flex items-center gap-1">
-          <div className="w-1 h-4 bg-ink/40 rounded-full"></div>
-          <div className="w-1 h-6 bg-ink/40 rounded-full"></div>
-          <div className="w-1 h-3 bg-ink/40 rounded-full"></div>
-        </div>
+        <Music className="w-6 h-6 text-ink/60" />
       )}
-      <span className="absolute inset-0 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
     </button>
   );
 };
