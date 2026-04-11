@@ -41,6 +41,15 @@
     --ink: 215 25% 20%;
     --dusty-blue: 215 20% 45%;
     --archival-paper: 35 30% 94%;
+    
+    /* Traditional Indian Wedding Colors */
+    --marigold: 38 100% 50%;           /* Bright Marigold Orange */
+    --deep-red: 0 70% 45%;              /* Traditional Wedding Red */
+    --leaf-green: 120 40% 35%;          /* Banana Leaf Green */
+    --warm-cream: 35 25% 88%;           /* Warm Cream Background */
+    --bright-gold: 45 100% 55%;        /* Bright Gold Accents */
+    --saffron: 35 85% 55%;             /* Saffron Orange */
+    --turmeric: 45 75% 60%;             /* Turmeric Yellow */
 
     --font-script: 'Pinyon Script', cursive;
     --font-handwritten: 'Mrs Saint Delafield', cursive;

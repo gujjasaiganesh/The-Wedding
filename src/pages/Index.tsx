@@ -12,6 +12,18 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background">
+      {/* Background Theme Image */}
+      <div 
+        className="fixed inset-0 z-0 opacity-40"
+        style={{
+          backgroundImage: 'url("/background-theme.png")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      />
+      
       <FloatingElements />
       <LanguageToggle lang={lang} onLangChange={setLang} />
       <MusicToggle />

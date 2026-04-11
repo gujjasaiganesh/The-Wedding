@@ -26,13 +26,35 @@ const EventsSection = ({ lang }: EventsSectionProps) => {
       <div className="max-w-6xl mx-auto relative z-10">
         <div className={`text-center mb-20 md:mb-40 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
           <div className="flex justify-center mb-6">
-            <span className="text-ink/60 text-4xl md:text-5xl font-script tracking-widest">The Story</span>
+            <span className="text-ink/60 text-4xl md:text-5xl font-script tracking-widest">The Wedding</span>
           </div>
-          <h2 className="font-cinzel text-xl md:text-4xl text-ink/90 mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase font-light text-balance px-4">Chapters of Celebration</h2>
+          <h2 className="font-cinzel text-xl md:text-4xl text-ink/90 mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase font-light text-balance px-4">Celebration</h2>
           <div className="h-[0.5px] w-24 bg-ink/30 mx-auto mb-8"></div>
         </div>
 
         <div className="space-y-32 md:space-y-72">
+          {/* Wedding Image */}
+          <div className="flex justify-center">
+            <div className="w-full md:w-2/3 relative group px-2 md:px-0">
+              {/* Sketch Frame Border */}
+              <div className="absolute -inset-4 md:-inset-8 border-[0.5px] border-ink/20 rounded-[2rem] md:rounded-[3rem] pointer-events-none transition-all duration-1000 group-hover:inset-[-2rem] group-hover:border-ink/30"></div>
+              
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-accent/30 shadow-sm transition-all duration-[2000ms]">
+                {/* Soft Archival Blending */}
+                <div className="absolute inset-0 z-10 pointer-events-none shadow-[inset_0_0_80px_rgba(244,241,234,1)]"></div>
+                
+                <img
+                  src="/wedding.png"
+                  alt="The Wedding"
+                  className="w-full h-full object-cover transition-all duration-[3000ms] group-hover:scale-105 filter grayscale-[0.2] sepia-[0.1] contrast-[0.9] brightness-[1.05]"
+                />
+                
+                {/* Ink Wash Overlay */}
+                <div className="absolute inset-0 bg-ink/5 mix-blend-multiply pointer-events-none"></div>
+              </div>
+            </div>
+          </div>
+
           {event.events?.map((item, index) => (
             <div
               key={item.id}

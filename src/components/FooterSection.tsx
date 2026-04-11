@@ -20,13 +20,7 @@ const FooterSection = ({ lang }: FooterSectionProps) => {
       </div>
 
       <div className="max-w-2xl mx-auto relative z-10 space-y-16">
-        {/* Divider */}
-        <div className={`flex items-center justify-center gap-6 transition-all duration-1000 ${isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"}`}>
-          <div className="w-12 md:w-24 h-[0.5px] bg-ink/20" />
-          <span className="text-ink/30 text-xl font-serif italic">Fin</span>
-          <div className="w-12 md:w-24 h-[0.5px] bg-ink/20" />
-        </div>
-
+        
         <div className="space-y-12">
           <p
             className={`font-playfair text-xl md:text-3xl italic text-ink/60 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"} text-balance px-4 leading-relaxed`}
