@@ -7,8 +7,8 @@ const MusicToggle = () => {
 
   useEffect(() => {
     // Note: Most browsers block autoplay. User interaction is required.
-    // High-quality Indian Wedding Instrumental (Sitar/Flute)
-    audioRef.current = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"); // Using a placeholder, in production replace with shehnai.mp3
+    // Wedding music file
+    audioRef.current = new Audio("/music.mp3.mpeg");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.15;
 
