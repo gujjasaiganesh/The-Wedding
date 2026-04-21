@@ -25,7 +25,7 @@ export const invitation = {
       te: "శ్రీరస్తు ✦ శుభమస్తు ✦ అవిఘ్నమస్తు",
     },
     message: {
-      en: "We solicit your gracious presence with family and friends on the auspicious occasion of the wedding ceremony of our children",
+      en: "We solicit your gracious presence with family and friends on the auspicious occasion of the wedding ceremony of",
       te: "మా పిల్లల వివాహ మహోత్సవ శుభ సందర్భంలో మీరు మీ కుటుంబ సభ్యులు మరియు స్నేహితులతో కలిసి విచ్చేసి మమ్మల్ని ఆశీర్వదించవలసిందిగా కోరుచున్నాము",
     },
     subtitle: {

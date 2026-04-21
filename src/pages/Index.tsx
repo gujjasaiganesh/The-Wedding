@@ -6,29 +6,21 @@ import VenueSection from "@/components/VenueSection";
 import FooterSection from "@/components/FooterSection";
 import MusicToggle from "@/components/MusicToggle";
 import LanguageToggle from "@/components/LanguageToggle";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const Index = () => {
   const [lang, setLang] = useState<"en" | "te">("en");
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background">
-      {/* Background Theme Image */}
-      <div 
-        className="fixed inset-0 z-0 opacity-40"
-        style={{
-          backgroundImage: 'url("/background-theme.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed'
-        }}
-      />
-      
       <FloatingElements />
       <LanguageToggle lang={lang} onLangChange={setLang} />
       <MusicToggle />
       <div className="relative z-10">
         <HeroSection lang={lang} />
+        <div className="py-16 md:py-24">
+          <CountdownTimer />
+        </div>
         <EventsSection lang={lang} />
         <VenueSection lang={lang} />
         <FooterSection lang={lang} />

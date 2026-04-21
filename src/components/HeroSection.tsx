@@ -81,7 +81,7 @@ const HeroSection = ({ lang }: HeroProps) => {
 
       {/* Family Details - Classic Serif Structure */}
       <div 
-        className={`relative z-10 mb-16 md:mb-20 space-y-3 transition-all duration-1000 delay-[1200ms] ${loaded ? "opacity-100" : "opacity-0"}`}
+        className={`relative z-10 mb-16 md:mb-20 space-y-3 transition-all duration-1000 delay-&lsqb;1200ms&rsqb; ${loaded ? "opacity-100" : "opacity-0"}`}
       >
         <p className="text-ink/70 font-serif text-xs md:text-base tracking-[0.2em] md:tracking-[0.3em] uppercase font-light px-4">
           {invitation.families.groomParentsEn}
@@ -93,7 +93,7 @@ const HeroSection = ({ lang }: HeroProps) => {
 
       {/* Sumuhurtham Block - Sketchbook Card */}
       <div 
-        className={`relative z-10 transition-all duration-1000 delay-[1400ms] ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+        className={`relative z-10 transition-all duration-1000 delay-&lsqb;1400ms&rsqb; ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
       >
         <div className="relative p-8 md:p-24 bg-background border border-ink/10 rounded-[3rem] md:rounded-[4rem] shadow-sm max-w-2xl mx-auto overflow-hidden group">
           <div className="absolute inset-4 border border-ink/5 rounded-[3.5rem] pointer-events-none"></div>

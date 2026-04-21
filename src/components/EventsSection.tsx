@@ -39,15 +39,17 @@ const EventsSection = ({ lang }: EventsSectionProps) => {
               {/* Sketch Frame Border */}
               <div className="absolute -inset-4 md:-inset-8 border-[0.5px] border-ink/20 rounded-[2rem] md:rounded-[3rem] pointer-events-none transition-all duration-1000 group-hover:inset-[-2rem] group-hover:border-ink/30"></div>
               
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-accent/30 shadow-sm transition-all duration-[2000ms]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-accent/30 shadow-sm transition-all duration-&lsqb;2000ms&rsqb;">
                 {/* Soft Archival Blending */}
                 <div className="absolute inset-0 z-10 pointer-events-none shadow-[inset_0_0_80px_rgba(244,241,234,1)]"></div>
                 
-                <img
-                  src="/wedding.png"
-                  alt="The Wedding"
-                  className="w-full h-full object-cover transition-all duration-[3000ms] group-hover:scale-105 filter grayscale-[0.2] sepia-[0.1] contrast-[0.9] brightness-[1.05]"
-                />
+                <a href="/back.png" target="_blank" className="block">
+                  <img
+                    src="/wedding.png"
+                    alt="The Wedding"
+                    className="w-full h-full object-cover transition-all duration-&lsqb;3000ms&rsqb; group-hover:scale-105 filter grayscale-[0.2] sepia-[0.1] contrast-[0.9] brightness-[1.05]"
+                  />
+                </a>
                 
                 {/* Ink Wash Overlay */}
                 <div className="absolute inset-0 bg-ink/5 mix-blend-multiply pointer-events-none"></div>
@@ -68,14 +70,14 @@ const EventsSection = ({ lang }: EventsSectionProps) => {
                 {/* Sketch Frame Border */}
                 <div className="absolute -inset-4 md:-inset-8 border-[0.5px] border-ink/20 rounded-[2rem] md:rounded-[3rem] pointer-events-none transition-all duration-1000 group-hover:inset-[-2rem] group-hover:border-ink/30"></div>
                 
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-accent/30 shadow-sm transition-all duration-[2000ms]">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-accent/30 shadow-sm transition-all duration-&lsqb;2000ms&rsqb;">
                   {/* Soft Archival Blending */}
                   <div className="absolute inset-0 z-10 pointer-events-none shadow-[inset_0_0_80px_rgba(244,241,234,1)]"></div>
                   
                   <img
                     src={item.illustration}
                     alt={t(item.title, lang)}
-                    className="w-full h-full object-cover transition-all duration-[3000ms] group-hover:scale-105 filter grayscale-[0.2] sepia-[0.1] contrast-[0.9] brightness-[1.05]"
+                    className="w-full h-full object-cover transition-all duration-&lsqb;3000ms&rsqb; group-hover:scale-105 filter grayscale-[0.2] sepia-[0.1] contrast-[0.9] brightness-[1.05]"
                   />
                   
                   {/* Ink Wash Overlay */}
