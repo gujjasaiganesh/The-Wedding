@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import EventsSection from "@/components/EventsSection";
 import VenueSection from "@/components/VenueSection";
 import FooterSection from "@/components/FooterSection";
-import MusicToggle from "@/components/MusicToggle";
 import LanguageToggle from "@/components/LanguageToggle";
 import CountdownTimer from "@/components/CountdownTimer";
 
@@ -15,7 +14,6 @@ const Index = () => {
     <div className="relative min-h-screen overflow-x-hidden bg-background">
       <FloatingElements />
       <LanguageToggle lang={lang} onLangChange={setLang} />
-      <MusicToggle />
       <div className="relative z-10">
         <HeroSection lang={lang} />
         <div className="py-16 md:py-24">
